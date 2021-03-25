@@ -2,16 +2,20 @@
 
 ## E2E Test
 
-This repository uses Cypress as an example to illustrate how to setup E2E tests with Vite.
+This repository uses Cypress as an example to illustrate how to setup end-to-end tests with Vite.
 
-To run the tess:
+To try it out, run:
 
 ```sh
 yarn test:e2e
 ```
 
-Running End-to-End test with Vite is no different to other bundlers: bundle the app for production, start a static http server, and then run the command from the test framework.
+Running end-to-end tests with Vite is no different from other bundlers:
 
-Vite provides a built-in static http server to preview the build results. It can be started by running `vite preview` (`yarn serve` if you are using the default template). The default URL of the preview server is `http://localhost:5000/`. So we also set the `baseUrl` option in `cypress.json` to this URL.
+* Bundle the app for production;
+* Start a static HTTP server;
+* Run the command from the test framework.
 
-`vite preview` serves the content of the `dist` folder, which is the result of the `vite build` command. So we add a `preserve` hook in the `script` section of `package.json`, which runs this build command. Therefore, whenever you run `npm run serve`, `vite build` will be executed first.
+Vite provides a built-in static HTTP server to preview the build results. We can start it by running `vite preview` (or `yarn serve`). The default URL of this preview server is `http://localhost:5000/`. So we also set the `baseUrl` option in `cypress.json` to this URL.
+
+`vite preview` serves the `dist` folder's content, which results from the `vite build` command. So we add a `preserve` hook to the `script` section of `package.json` to run this command. Therefore, whenever you run `npm run serve`, `vite build` will be executed first.
