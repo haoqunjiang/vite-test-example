@@ -106,3 +106,7 @@ dist
 .DS_Store
 dist-ssr
 *.local
+
+# Cypress
+/tests/e2e/videos/
+/tests/e2e/screenshots/
