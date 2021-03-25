@@ -4,7 +4,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "serve": "vite preview"
+    "preserve": "vite build",
+    "serve": "vite preview",
+    "test:e2e": "start-server-and-test serve http://localhost:5000 'cypress open'"
   },
   "dependencies": {
     "vue": "^3.0.5"
@@ -12,6 +14,8 @@
   "devDependencies": {
     "@vitejs/plugin-vue": "^1.1.5",
     "@vue/compiler-sfc": "^3.0.5",
+    "cypress": "^6.8.0",
+    "start-server-and-test": "^1.12.1",
     "vite": "^2.1.0"
   }
 }
