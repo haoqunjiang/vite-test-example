@@ -10,16 +10,17 @@ export default {
       'src/**/*.{vue,js,jsx,ts,tsx}'
     ]
   },
-  testRunnerHtml: testFramework => `
-    <html>
-      <head>
-        <script>
-          // Note: if using '@testing-library/vue' instead of '@vue/test-utils', these globals are required
-          global = globalThis;
-          process = { env: {} };
-        </script>
-        <script type="module" src="${testFramework}"></script>
-      </head>
-    </html>
-  `,
+
+  // Note: if using '@testing-library/vue' instead of '@vue/test-utils', the following option is required to inject additional global variables
+  // testRunnerHtml: testFramework => `
+  //   <html>
+  //     <head>
+  //       <script>
+  //         global = globalThis;
+  //         process = { env: {} };
+  //       </script>
+  //       <script type="module" src="${testFramework}"></script>
+  //     </head>
+  //   </html>
+  // `,
 };
