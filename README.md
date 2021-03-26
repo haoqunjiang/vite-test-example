@@ -22,8 +22,15 @@ Vite provides a built-in static HTTP server to preview the build results. We can
 
 ## Unit Testing
 
+```sh
+yarn test:unit
+```
+
+This repository uses [`@web/test-runner`](https://modern-web.dev/docs/test-runner/overview/) and [`vite-web-test-runner-plugin`](https://github.com/betaboon/vite-web-test-runner-plugin/) to execute unit tests.
+
+The test framework is [Mocha](https://mochajs.org/) and the assertion library is [Chai](https://www.chaijs.com/).
+
 ## TODOs
 
 * TypeScript example
-* [`@web/test-runner`](https://modern-web.dev/docs/test-runner/overview/) example (a custom plugin required)
 * CI setup
