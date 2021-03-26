@@ -22,10 +22,6 @@ Vite provides a built-in static HTTP server to preview the build results. We can
 
 ## Unit Testing
 
-This example repository uses [vite-plugin-test](https://github.com/aelbore/vite-plugin-test/) for unit testing.
-
-It runs the spec files under the `tests/unit` directory via mocha + puppeteer.
-
 ## TODOs
 
 * TypeScript example
