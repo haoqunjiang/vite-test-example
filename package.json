@@ -6,7 +6,8 @@
     "build": "vite build",
     "preserve": "vite build",
     "serve": "vite preview",
-    "test:e2e": "start-server-and-test serve http://localhost:5000 'cypress open'",
+    "cy:open": "cypress open",
+    "test:e2e": "start-server-and-test serve http://localhost:5000 cy:open",
     "test:unit": "web-test-runner \"tests/unit/**/*.{spec,test}.{js,jsx}\" --coverage"
   },
   "dependencies": {
