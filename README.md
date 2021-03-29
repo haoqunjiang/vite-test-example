@@ -1,5 +1,7 @@
 # vite-test-example
 
+The directory structure and commands for tests are the same as the projects created by `@vue/cli`.
+
 ## E2E Testing
 
 This repository uses Cypress as an example to illustrate how to setup end-to-end tests with Vite.
